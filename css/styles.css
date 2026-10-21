@@ -47,11 +47,19 @@ a { color: inherit; text-decoration: none; }
   height: 39px;
   display: grid;
   place-items: center;
+  overflow: hidden;
   border-radius: 12px;
-  background: linear-gradient(135deg, #ffc477, #ff7628);
-  color: #16100b;
-  font-size: 25px;
-  box-shadow: 0 0 28px rgba(255,139,53,.2);
+  background: transparent;
+  box-shadow: 0 0 20px rgba(255,139,53,.15);
+  flex-shrink: 0;
+}
+
+.brand-mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: inherit;
 }
 
 .brand-dot { color: var(--orange); }

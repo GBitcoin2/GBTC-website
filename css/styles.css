@@ -606,3 +606,15 @@ a { color: inherit; text-decoration: none; }
     transition: none !important;
   }
 }
+
+/* HBTC Touch-Friendly Buttons */
+@media (hover: none) and (pointer: coarse) {
+  .btn {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  .btn:active {
+    box-shadow: 0 4px 16px rgba(255, 166, 87, 0.18);
+  }
+}

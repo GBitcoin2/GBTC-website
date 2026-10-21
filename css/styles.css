@@ -517,3 +517,28 @@ a { color: inherit; text-decoration: none; }
 .featured-card:hover {
   box-shadow: 0 12px 40px rgba(255, 166, 87, 0.14);
 }
+
+/* HBTC Premium Card Border */
+.feature-card {
+  overflow: hidden;
+}
+
+.feature-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 166, 87, 0.08),
+    transparent 45%,
+    rgba(255, 166, 87, 0.03)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.feature-card:hover::before {
+  opacity: 1;
+}

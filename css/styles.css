@@ -722,3 +722,26 @@ a { color: inherit; text-decoration: none; }
   color: #fff;
   transform: translateY(-2px);
 }
+
+.footer-social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 12px 0;
+  color: var(--orange);
+  text-decoration: none;
+  transition: color .2s ease, transform .2s ease;
+}
+
+.footer-social .x-icon {
+  display: block;
+  width: 23px;
+  height: 23px;
+}
+
+.footer-social:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}

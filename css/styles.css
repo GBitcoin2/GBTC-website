@@ -499,3 +499,12 @@ a { color: inherit; text-decoration: none; }
   outline-offset: 4px;
   border-radius: 4px;
 }
+
+/* HBTC Card Interaction */
+.feature-card:active {
+  transform: translateY(-2px) scale(0.99);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .feature-card { transform: none !important; }
+}

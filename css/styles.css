@@ -687,3 +687,16 @@ a { color: inherit; text-decoration: none; }
   background: var(--gold);
   box-shadow: 0 0 10px rgba(255, 166, 87, 0.35);
 }
+
+/* HBTC Navigation Touch Targets */
+@media (hover: none) and (pointer: coarse) {
+  .main-nav a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 6px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+}

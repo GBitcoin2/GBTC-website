@@ -25,3 +25,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+
+// HBTC Active Navigation
+const navLinks = document.querySelectorAll('.main-nav a[href^="#"]');
+const navSections = Array.from(navLinks)
+  .map((link) => document.querySelector(link.getAttribute('href')))
+  .filter(Boolean);
+
+if ('IntersectionObserver' in window && navSections.length) {
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        navLinks.forEach((link) => {
+          const isActive = link.getAttribute('href') === `#${entry.target.id}`;
+          link.classList.toggle('active', isActive);
+
+          if (isActive) {
+            link.setAttribute('aria-current', 'location');
+          } else {
+            link.removeAttribute('aria-current');
+          }
+        });
+      }
+    });
+  }, { rootMargin: '-20% 0px -60% 0px' });
+
+  navSections.forEach((section) => navObserver.observe(section));
+}

@@ -766,3 +766,80 @@ a { color: inherit; text-decoration: none; }
     margin-left: auto;
   }
 }
+
+/* HBTC Language Switcher */
+.language-switcher {
+  background: #101116;
+  color: var(--gold);
+  border: 1px solid rgba(255,171,95,.4);
+  border-radius: 8px;
+  padding: 9px 10px;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  outline-offset: 4px;
+  flex-shrink: 0;
+}
+
+.language-switcher option {
+  background: #101116;
+  color: #ffffff;
+}
+
+.language-switcher:focus-visible {
+  outline: 2px solid var(--gold);
+}
+
+@media (max-width: 650px) {
+  .language-switcher {
+    padding: 7px 8px;
+    font-size: 11px;
+  }
+}
+
+/* HBTC Arabic RTL Support */
+html[dir="rtl"] body {
+  text-align: right;
+}
+
+html[dir="rtl"] .hero,
+html[dir="rtl"] .intro-grid,
+html[dir="rtl"] .utility-grid,
+html[dir="rtl"] .section-heading,
+html[dir="rtl"] .roadmap-item {
+  direction: rtl;
+}
+
+html[dir="rtl"] .main-nav {
+  direction: rtl;
+}
+
+html[dir="rtl"] .brand {
+  letter-spacing: 0;
+}
+
+html[dir="rtl"] .header-button span,
+html[dir="rtl"] .button span {
+  margin-left: 0;
+  margin-right: 7px;
+}
+
+html[dir="rtl"] .hero-note {
+  direction: rtl;
+}
+
+html[dir="rtl"] .roadmap-item,
+html[dir="rtl"] .utility-item {
+  text-align: right;
+}
+
+html[dir="rtl"] .site-footer {
+  direction: rtl;
+}
+
+html[dir="rtl"] .section-label,
+html[dir="rtl"] .card-number,
+html[dir="rtl"] .roadmap-index,
+html[dir="rtl"] .phase-status {
+  letter-spacing: 0;
+}

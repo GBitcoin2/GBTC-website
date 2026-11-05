@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gbitcoin2.github.io/GBTC-website/sitemap.xml

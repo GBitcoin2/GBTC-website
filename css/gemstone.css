@@ -1,0 +1,817 @@
+/* =========================================
+   GBTCcoin — GEMSTONE VISUAL IDENTITY
+   Sapphire / Amethyst / Electric Cyan
+========================================= */
+
+:root {
+  --bg: #050711;
+  --surface: #0b1020;
+  --surface-light: #111a30;
+  --text: #f3f6ff;
+  --muted: #929db8;
+  --orange: #477dff;
+  --gold: #62dcff;
+  --border: rgba(133, 166, 255, .13);
+
+  --sapphire: #356bff;
+  --amethyst: #8b5cff;
+  --cyan: #62dcff;
+  --deep-blue: #101a3b;
+  --glass: rgba(13, 22, 46, .76);
+}
+
+/* Global atmosphere */
+
+html {
+  background: var(--bg);
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(ellipse at 15% 12%, rgba(53,107,255,.10), transparent 38%),
+    radial-gradient(ellipse at 85% 42%, rgba(139,92,255,.08), transparent 35%),
+    var(--bg);
+  color: var(--text);
+}
+
+::selection {
+  background: rgba(98,220,255,.3);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 4px;
+}
+
+/* Header */
+
+.site-header {
+  background: rgba(5, 7, 17, .82);
+  border-bottom-color: rgba(119, 158, 255, .13);
+  box-shadow: 0 8px 35px rgba(0,0,0,.18);
+}
+
+.brand-mark {
+  box-shadow:
+    0 0 18px rgba(53,107,255,.25),
+    0 0 35px rgba(139,92,255,.12);
+}
+
+.brand-dot,
+.main-nav a:hover,
+.header-button span {
+  color: var(--cyan);
+}
+
+.main-nav a {
+  transition: color .25s ease, text-shadow .25s ease;
+}
+
+.main-nav a:hover {
+  text-shadow: 0 0 18px rgba(98,220,255,.45);
+}
+
+.header-button {
+  border-color: rgba(98,220,255,.35);
+  background: rgba(53,107,255,.06);
+}
+
+.header-button:hover {
+  background: rgba(53,107,255,.15);
+}
+
+/* Hero */
+
+.hero {
+  background:
+    radial-gradient(ellipse at 78% 45%, rgba(53,107,255,.10), transparent 42%),
+    transparent;
+}
+
+.hero-glow {
+  background: radial-gradient(
+    circle,
+    rgba(53,107,255,.20),
+    rgba(139,92,255,.09) 38%,
+    transparent 70%
+  );
+  filter: blur(12px);
+}
+
+.eyebrow,
+.section-label {
+  color: var(--cyan);
+}
+
+.status-dot {
+  background: var(--cyan);
+  box-shadow: 0 0 14px var(--cyan);
+}
+
+.gradient-text {
+  background: linear-gradient(
+    105deg,
+    #4b7cff 0%,
+    #a78aff 48%,
+    #62dcff 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-description {
+  color: #aab5d0;
+}
+
+.button {
+  border-radius: 10px;
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease,
+    background .25s ease;
+}
+
+.button-primary {
+  background: linear-gradient(110deg, #356bff, #805cff 58%, #54cfff);
+  color: #fff;
+  box-shadow:
+    0 8px 28px rgba(53,107,255,.25),
+    inset 0 1px 0 rgba(255,255,255,.22);
+}
+
+.button-primary:hover {
+  box-shadow:
+    0 10px 35px rgba(53,107,255,.38),
+    0 0 24px rgba(98,220,255,.16);
+}
+
+.button-secondary {
+  border-color: rgba(135,164,255,.24);
+  background: rgba(255,255,255,.025);
+}
+
+.button-secondary:hover {
+  background: rgba(53,107,255,.10);
+  border-color: rgba(98,220,255,.35);
+}
+
+.hero-note {
+  color: #8996b5;
+}
+
+.note-line {
+  background: var(--cyan);
+}
+
+/* Gemstone orbital visual */
+
+.hero-visual {
+  perspective: 1100px;
+}
+
+.orbit {
+  border-color: rgba(98,220,255,.18);
+}
+
+.orbit-one {
+  border-color: rgba(98,220,255,.42);
+  box-shadow: 0 0 25px rgba(53,107,255,.08);
+}
+
+.orbit-two {
+  border-color: rgba(139,92,255,.22);
+}
+
+.orbit-three {
+  border-color: rgba(53,107,255,.22);
+}
+
+.core {
+  transform-style: preserve-3d;
+  background:
+    radial-gradient(circle at 32% 22%, #557fff 0%, #202d69 35%, #0a1028 72%);
+  border: 1px solid rgba(125,190,255,.75);
+  box-shadow:
+    0 0 35px rgba(53,107,255,.38),
+    0 0 85px rgba(139,92,255,.20),
+    inset 0 0 28px rgba(98,220,255,.18);
+  animation: gemstone-float 5s ease-in-out infinite;
+}
+
+.core::before {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  border: 1px solid rgba(98,220,255,.24);
+  border-radius: 50%;
+  box-shadow: 0 0 24px rgba(98,220,255,.13);
+  pointer-events: none;
+}
+
+.core::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 35%;
+  top: 8%;
+  left: 15%;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,.20),
+    rgba(255,255,255,0)
+  );
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+.core-inner {
+  position: relative;
+  background: radial-gradient(circle at 35% 25%, #263b83, #0a1025 78%);
+  border-color: rgba(98,220,255,.48);
+  color: #d4f6ff;
+  text-shadow:
+    0 0 12px rgba(98,220,255,.65),
+    0 0 28px rgba(53,107,255,.45);
+  box-shadow:
+    inset 0 0 25px rgba(53,107,255,.22),
+    0 0 22px rgba(98,220,255,.12);
+}
+
+.core-inner span {
+  color: #a8baff;
+}
+
+.orbit-node {
+  background: linear-gradient(145deg, #17264c, #0b1125);
+  border-color: rgba(98,220,255,.42);
+  color: var(--cyan);
+  box-shadow:
+    0 0 20px rgba(53,107,255,.20),
+    inset 0 1px 0 rgba(255,255,255,.09);
+}
+
+.node-one {
+  animation: node-float 4s ease-in-out infinite;
+}
+
+.node-two {
+  animation: node-float 5s ease-in-out infinite reverse;
+}
+
+.node-three {
+  animation: node-float 4.5s ease-in-out infinite;
+}
+
+.visual-caption span {
+  background: var(--cyan);
+  box-shadow: 0 0 10px var(--cyan);
+}
+
+@keyframes gemstone-float {
+  0%, 100% { transform: translateY(0) rotateY(-8deg); }
+  50% { transform: translateY(-9px) rotateY(8deg); }
+}
+
+@keyframes node-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Ticker */
+
+.ticker {
+  background: rgba(12,17,35,.88);
+  border-color: rgba(98,220,255,.12);
+  color: #aebbd8;
+}
+
+.ticker span {
+  color: var(--cyan);
+}
+
+/* Sections */
+
+.section {
+  position: relative;
+}
+
+.intro-section,
+.utility-section {
+  border-color: var(--border);
+}
+
+.muted-text,
+.secondary-copy {
+  color: var(--muted);
+}
+
+.section-copy {
+  color: #b2bdd6;
+}
+
+.ecosystem-section {
+  background: linear-gradient(
+    180deg,
+    rgba(10,15,32,.92),
+    rgba(8,11,24,.96)
+  );
+}
+
+.section-heading > p {
+  color: #9ca9c8;
+}
+
+/* Cards */
+
+.feature-card {
+  background: linear-gradient(
+    145deg,
+    rgba(20,31,61,.92),
+    rgba(9,14,29,.96)
+  );
+  border-color: rgba(119,158,255,.16);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.025);
+}
+
+.feature-card:hover {
+  border-color: rgba(98,220,255,.48);
+  box-shadow:
+    0 14px 38px rgba(0,0,0,.28),
+    0 0 28px rgba(53,107,255,.10);
+}
+
+.featured-card {
+  border-color: rgba(139,92,255,.42);
+  background: linear-gradient(
+    145deg,
+    rgba(44,31,83,.64),
+    rgba(10,15,31,.97) 75%
+  );
+}
+
+.featured-card:hover {
+  border-color: rgba(98,220,255,.55);
+  box-shadow: 0 14px 40px rgba(139,92,255,.15);
+}
+
+.card-icon {
+  color: var(--cyan);
+  border-color: rgba(98,220,255,.25);
+  background: rgba(53,107,255,.10);
+}
+
+.card-number {
+  color: #7688b4;
+}
+
+.feature-card p {
+  color: #a2aec9;
+}
+
+.card-link {
+  color: #c1cce5;
+}
+
+.card-link span {
+  color: var(--cyan);
+}
+
+.feature-card::before {
+  background: linear-gradient(
+    135deg,
+    rgba(98,220,255,.10),
+    transparent 45%,
+    rgba(139,92,255,.08)
+  );
+}
+
+/* Utilities */
+
+.utility-symbol {
+  color: var(--cyan);
+}
+
+.utility-arrow {
+  color: #8b9bc1;
+}
+
+.notice {
+  background: rgba(53,107,255,.055);
+  border-color: rgba(98,220,255,.16);
+  color: #aab7d2;
+}
+
+.notice span {
+  color: var(--cyan);
+}
+
+/* Roadmap */
+
+.roadmap-section {
+  background: linear-gradient(180deg, #0a1021, #080b18);
+  border-color: var(--border);
+}
+
+.roadmap-index {
+  color: var(--cyan);
+}
+
+.roadmap-item p {
+  color: #a0acc8;
+}
+
+.phase-status {
+  color: #91a3ca;
+}
+
+/* Closing */
+
+.closing-section {
+  background:
+    radial-gradient(ellipse at center, rgba(53,107,255,.12), transparent 60%),
+    #070a16;
+  border-color: var(--border);
+}
+
+.closing-orb {
+  background: linear-gradient(135deg, #62dcff, #477dff 55%, #8b5cff);
+  color: #fff;
+  box-shadow:
+    0 0 35px rgba(53,107,255,.35),
+    0 0 70px rgba(139,92,255,.18);
+}
+
+/* Footer */
+
+.site-footer {
+  background: #050711;
+  border-color: var(--border);
+}
+
+.site-footer p,
+.footer-copy {
+  color: #8794b2;
+}
+
+/* Scroll reveal */
+
+.reveal {
+  will-change: opacity, transform;
+}
+
+/* Arabic layout */
+
+html[dir="rtl"] .hero-note,
+html[dir="rtl"] .eyebrow {
+  letter-spacing: 0;
+}
+
+html[dir="rtl"] .card-number {
+  right: auto;
+  left: 25px;
+}
+
+html[dir="rtl"] .phase-status {
+  text-align: left;
+}
+
+html[dir="rtl"] .notice span {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+/* Mobile refinement */
+
+@media (max-width: 900px) {
+  .core {
+    animation-duration: 6s;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero-glow {
+    width: 380px;
+    height: 380px;
+    right: -15%;
+  }
+
+  .hero-visual {
+    perspective: 800px;
+  }
+
+  .core {
+    width: 155px;
+    height: 155px;
+  }
+
+  .core-inner {
+    width: 115px;
+    height: 115px;
+  }
+
+  .feature-card {
+    backdrop-filter: blur(8px);
+  }
+
+  .closing-section {
+    background:
+      radial-gradient(ellipse at center, rgba(53,107,255,.13), transparent 65%),
+      #070a16;
+  }
+}
+
+/* Accessibility and battery-friendly motion */
+
+@media (prefers-reduced-motion: reduce) {
+  .core,
+  .node-one,
+  .node-two,
+  .node-three {
+    animation: none !important;
+  }
+
+  .reveal {
+    will-change: auto;
+  }
+}
+
+/* =========================================
+   GBTC — 3D GEMSTONE COIN
+========================================= */
+
+.coin-rotator {
+  position: relative;
+  width: 132px;
+  height: 132px;
+  transform-style: preserve-3d;
+  animation: gbtc-coin-spin 12s linear infinite;
+}
+
+.coin-rotator::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 50%;
+  border: 7px solid #477dff;
+  transform: translateZ(0);
+  box-shadow:
+    0 0 15px rgba(71,125,255,.7),
+    0 0 28px rgba(139,92,255,.4),
+    inset 0 0 12px rgba(98,220,255,.5);
+}
+
+.coin-face {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid rgba(98,220,255,.8);
+  background:
+    radial-gradient(circle at 32% 25%, #344f9d, #111a3b 65%, #080d20);
+  box-shadow:
+    inset 0 0 18px rgba(98,220,255,.25),
+    0 0 20px rgba(53,107,255,.3);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.coin-face img {
+  display: block;
+  width: 76%;
+  height: 76%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 9px rgba(98,220,255,.45));
+}
+
+.coin-front {
+  transform: translateZ(7px);
+}
+
+.coin-back {
+  transform: rotateY(180deg) translateZ(7px);
+}
+
+@keyframes gbtc-coin-spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .coin-rotator {
+    animation: none !important;
+  }
+}
+
+
+/* 3D coin scene perspective */
+.hero-visual {
+  perspective: 900px;
+  perspective-origin: 50% 50%;
+}
+
+.coin-rotator {
+  transform-origin: center center;
+  will-change: transform;
+}
+
+.coin-rotator::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 7px solid rgba(98,220,255,.38);
+  transform: rotateY(90deg);
+  box-shadow: 0 0 18px rgba(53,107,255,.5);
+  pointer-events: none;
+}
+
+@media (max-width: 650px) {
+  .hero-visual {
+    perspective: 750px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .coin-rotator {
+    will-change: auto;
+  }
+}
+
+
+/* GBTC — Enhanced Gemstone Coin Clarity */
+.coin-rotator {
+  width: 144px;
+  height: 144px;
+  animation: gbtc-coin-spin 16s linear infinite;
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+}
+
+.coin-face img {
+  width: 88%;
+  height: 88%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 4px rgba(98,220,255,.32));
+}
+
+.coin-face {
+  border-color: rgba(98,220,255,.9);
+  box-shadow:
+    inset 0 0 12px rgba(98,220,255,.18),
+    0 0 14px rgba(53,107,255,.24);
+}
+
+@media (max-width: 650px) {
+  .coin-rotator {
+    width: 136px;
+    height: 136px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .coin-rotator {
+    animation: none !important;
+  }
+}
+
+
+/* GBTC Token Details */
+.token-section {
+  position: relative;
+}
+
+.token-card {
+  position: relative;
+  max-width: 820px;
+  margin: 42px auto 0;
+  padding: 32px;
+  overflow: hidden;
+  border: 1px solid rgba(98, 220, 255, .22);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(53, 107, 255, .16), transparent 42%),
+    linear-gradient(145deg, rgba(17, 26, 48, .96), rgba(7, 12, 27, .98));
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, .28),
+    inset 0 1px 0 rgba(255, 255, 255, .06);
+}
+
+.token-card-top,
+.token-address-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.token-symbol {
+  color: #f3f6ff;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.token-network {
+  padding: 8px 12px;
+  border: 1px solid rgba(98, 220, 255, .25);
+  border-radius: 30px;
+  color: #62dcff;
+  background: rgba(98, 220, 255, .07);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.token-address-label {
+  margin: 34px 0 12px;
+  color: #929db8;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.token-address-row {
+  padding: 14px;
+  border: 1px solid rgba(133, 166, 255, .17);
+  border-radius: 14px;
+  background: rgba(3, 8, 20, .72);
+}
+
+.token-address-row code {
+  min-width: 0;
+  color: #c8d8ff;
+  font-size: 13px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+  user-select: text;
+}
+
+.token-copy-button {
+  flex-shrink: 0;
+  padding: 11px 16px;
+  border: 1px solid rgba(98, 220, 255, .4);
+  border-radius: 10px;
+  color: #06101c;
+  background: linear-gradient(110deg, #62dcff, #8b9dff);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.token-copy-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(98, 220, 255, .22);
+}
+
+.token-copy-button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+.token-copy-feedback {
+  min-height: 20px;
+  margin: 12px 0 0;
+  color: #62dcff;
+  font-size: 13px;
+}
+
+.token-note {
+  margin: 14px 0 0;
+  color: #929db8;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .token-card {
+    padding: 22px 16px;
+    border-radius: 18px;
+  }
+
+  .token-address-row {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .token-address-row code {
+    font-size: 11px;
+  }
+
+  .token-copy-button {
+    width: 100%;
+    min-height: 44px;
+  }
+}

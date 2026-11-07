@@ -926,3 +926,76 @@ html[dir="rtl"] .notice span {
     transform: none;
   }
 }
+
+/* GBTC Utility Image Cards */
+
+.utility-item {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  border: 1px solid rgba(119,158,255,.20);
+  border-radius: 16px;
+  background: linear-gradient(145deg, #142044, #10172e);
+}
+
+.utility-image {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  object-position: center;
+  border-bottom: 1px solid rgba(98,220,255,.16);
+  transition: transform .45s ease, filter .45s ease;
+}
+
+.utility-item:hover .utility-image {
+  transform: scale(1.035);
+  filter: brightness(1.12) saturate(1.08);
+}
+
+.utility-item-content {
+  display: grid;
+  grid-template-columns: 42px 1fr 22px;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  min-height: 76px;
+}
+
+.utility-item-content > span:nth-child(2) {
+  color: #dce6ff;
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.utility-item-content .utility-symbol {
+  flex-shrink: 0;
+}
+
+.utility-item-content .utility-arrow {
+  justify-self: end;
+}
+
+@media (max-width: 650px) {
+  .utility-image {
+    height: 175px;
+  }
+
+  .utility-item-content {
+    grid-template-columns: 38px 1fr 18px;
+    gap: 11px;
+    padding: 15px 14px;
+    min-height: 68px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .utility-image {
+    transition: none;
+  }
+
+  .utility-item:hover .utility-image {
+    transform: none;
+  }
+}

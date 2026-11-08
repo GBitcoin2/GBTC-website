@@ -999,3 +999,10 @@ html[dir="rtl"] .notice span {
     transform: none;
   }
 }
+
+/* Improve text visibility in the first two utility images */
+.utility-item:nth-child(1) .utility-image,
+.utility-item:nth-child(2) .utility-image {
+  object-fit: contain;
+  background: linear-gradient(145deg, #142044, #10172e);
+}

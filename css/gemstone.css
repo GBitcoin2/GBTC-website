@@ -1000,20 +1000,25 @@ html[dir="rtl"] .notice span {
   }
 }
 
-/* Improve text visibility in the first two utility images */
-.utility-item:nth-child(1) .utility-image,
-.utility-item:nth-child(2) .utility-image {
-  object-fit: contain;
-  background: linear-gradient(145deg, #142044, #10172e);
+
+/* GBTC Token Explorer Link */
+.token-explorer-link {
+  display: inline-flex;
+  align-items: center;
+  margin: -2px 0 18px;
+  padding: 7px 13px;
+  border: 1px solid rgba(98, 220, 255, .28);
+  border-radius: 9px;
+  color: #62dcff;
+  background: rgba(98, 220, 255, .07);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .5px;
+  text-decoration: none;
+  transition: background .25s ease, border-color .25s ease;
 }
 
-/* Smaller full-image display for first two utility cards */
-.utility-item:nth-child(1) .utility-image,
-.utility-item:nth-child(2) .utility-image {
-  height: 145px;
-  width: 100%;
-  object-fit: contain;
-  object-position: center;
-  padding: 10px;
-  box-sizing: border-box;
+.token-explorer-link:hover {
+  background: rgba(98, 220, 255, .15);
+  border-color: rgba(98, 220, 255, .6);
 }

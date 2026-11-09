@@ -1022,3 +1022,9 @@ html[dir="rtl"] .notice span {
   background: rgba(98, 220, 255, .15);
   border-color: rgba(98, 220, 255, .6);
 }
+
+/* Slightly reduce the first two utility images */
+.utility-list > .utility-item:nth-child(-n+2) .utility-image {
+  width: 95%;
+  margin-inline: auto;
+}

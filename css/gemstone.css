@@ -659,7 +659,7 @@ html[dir="rtl"] .notice span {
 }
 
 .coin-face img {
-  width: 88%;
+  width: 81%;
   height: 88%;
   object-fit: contain;
   filter: drop-shadow(0 0 4px rgba(98,220,255,.32));
@@ -1025,6 +1025,6 @@ html[dir="rtl"] .notice span {
 
 /* Slightly reduce the first two utility images */
 .utility-list > .utility-item:nth-child(-n+2) .utility-image {
-  width: 88%;
+  width: 81%;
   margin-inline: auto;
 }

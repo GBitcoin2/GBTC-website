@@ -566,11 +566,6 @@
   }
 
   function detectPreferredLanguage() {
-    try {
-      const saved = localStorage.getItem("hbtc-language");
-      if (saved && translations[saved]) return saved;
-    } catch (_) {}
-
     const deviceLanguages = Array.isArray(navigator.languages)
       ? navigator.languages
       : [];
@@ -585,6 +580,11 @@
 
       if (translations[baseLanguage]) return baseLanguage;
     }
+
+    try {
+      const saved = localStorage.getItem("hbtc-language");
+      if (saved && translations[saved]) return saved;
+    } catch (_) {}
 
     return "en";
   }

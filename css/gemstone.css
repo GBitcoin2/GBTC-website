@@ -944,8 +944,7 @@ html[dir="rtl"] .notice span {
 .utility-image {
   display: block;
   width: 100%;
-  height: auto;
-  aspect-ratio: auto;
+  height: clamp(180px, 24vw, 280px);
   object-fit: contain;
   object-position: center;
   background: linear-gradient(145deg, #142044, #10172e);
@@ -957,11 +956,7 @@ html[dir="rtl"] .notice span {
   filter: brightness(1.08) saturate(1.05);
 }
 
-@media (min-width: 900px) {
-  .utility-image {
-    max-height: 420px;
-  }
-}
+
 
 
 

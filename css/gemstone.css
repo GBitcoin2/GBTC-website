@@ -1025,6 +1025,6 @@ html[dir="rtl"] .notice span {
 
 /* Slightly reduce the first two utility images */
 .utility-list > .utility-item:nth-child(-n+2) .utility-image {
-  width: 95%;
+  width: 92%;
   margin-inline: auto;
 }

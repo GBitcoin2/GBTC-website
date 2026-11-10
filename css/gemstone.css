@@ -1114,3 +1114,145 @@ html[dir="rtl"] .notice span {
   }
 }
 
+
+/* =========================================
+   GBTC — QUANTUM MOTION
+   Clear logo / independent orbital effects
+========================================= */
+
+.coin-rotator {
+  width: 144px;
+  height: 144px;
+  position: relative;
+  animation: none !important;
+  transform: none !important;
+  transform-style: flat;
+  filter: drop-shadow(0 0 16px rgba(53,107,255,.32));
+  will-change: auto;
+}
+
+/* Keep only the front logo visible */
+.coin-face.coin-back {
+  display: none !important;
+}
+
+.coin-face.coin-front {
+  transform: none !important;
+  z-index: 2;
+  border-color: rgba(98,220,255,.85);
+  box-shadow:
+    inset 0 0 20px rgba(98,220,255,.16),
+    0 0 22px rgba(53,107,255,.3);
+}
+
+.coin-face img {
+  width: 82%;
+  height: 82%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(98,220,255,.48));
+}
+
+/* Outer rotating energy rings */
+.coin-rotator::before {
+  content: "";
+  position: absolute;
+  inset: -13px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: rgba(98,220,255,.95);
+  border-right-color: rgba(53,107,255,.55);
+  box-shadow: 0 0 16px rgba(53,107,255,.32);
+  pointer-events: none;
+  animation: gbtc-quantum-ring 7s linear infinite;
+}
+
+.coin-rotator::after {
+  content: "";
+  position: absolute;
+  inset: -22px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  border-bottom-color: rgba(139,92,255,.8);
+  border-left-color: rgba(98,220,255,.35);
+  pointer-events: none;
+  animation: gbtc-quantum-ring 11s linear infinite reverse;
+}
+
+/* Moving light reflection across the logo */
+.coin-face.coin-front::after {
+  content: "";
+  position: absolute;
+  inset: -35%;
+  pointer-events: none;
+  background: linear-gradient(
+    115deg,
+    transparent 43%,
+    rgba(255,255,255,.04) 47%,
+    rgba(98,220,255,.3) 50%,
+    rgba(255,255,255,.1) 53%,
+    transparent 58%
+  );
+  transform: translateX(-110%);
+  animation: gbtc-quantum-shine 5s ease-in-out infinite;
+}
+
+/* Independent orbital movement */
+.orbit-one {
+  animation: rotate 24s linear infinite !important;
+}
+
+.orbit-two {
+  animation: rotate 38s linear infinite reverse;
+}
+
+.orbit-three {
+  animation: rotate 52s linear infinite reverse !important;
+}
+
+/* Soft energy pulse around the central core */
+.core {
+  animation: gbtc-core-pulse 5s ease-in-out infinite;
+}
+
+@keyframes gbtc-quantum-ring {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes gbtc-quantum-shine {
+  0%, 18% { transform: translateX(-110%); }
+  72%, 100% { transform: translateX(110%); }
+}
+
+@keyframes gbtc-core-pulse {
+  0%, 100% {
+    box-shadow:
+      0 0 30px rgba(53,107,255,.3),
+      0 0 65px rgba(139,92,255,.16),
+      inset 0 0 24px rgba(98,220,255,.14);
+  }
+  50% {
+    box-shadow:
+      0 0 42px rgba(53,107,255,.48),
+      0 0 82px rgba(139,92,255,.28),
+      inset 0 0 30px rgba(98,220,255,.22);
+  }
+}
+
+@media (max-width: 650px) {
+  .coin-rotator {
+    width: 136px;
+    height: 136px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .coin-rotator::before,
+  .coin-rotator::after,
+  .coin-face.coin-front::after,
+  .orbit-one,
+  .orbit-two,
+  .orbit-three,
+  .core {
+    animation: none !important;
+  }
+}

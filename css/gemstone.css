@@ -1256,3 +1256,28 @@ html[dir="rtl"] .notice span {
     animation: none !important;
   }
 }
+
+/* GBTC — Preserve the original logo without clipping */
+.coin-face.coin-front {
+  overflow: visible !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backface-visibility: visible !important;
+  -webkit-backface-visibility: visible !important;
+}
+
+.coin-face.coin-front img {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  position: relative;
+  z-index: 1;
+}
+
+.coin-face.coin-front::after {
+  inset: 0;
+  border-radius: 50%;
+}

@@ -1863,3 +1863,264 @@ html[dir="rtl"] .unified-layer-heading {
     font-size: 11px;
   }
 }
+
+/* GBTC Unified Economy — clarity redesign */
+.unified-economy-section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.unified-economy-heading {
+  gap: 32px;
+  align-items: end;
+  margin-bottom: 38px;
+}
+
+.unified-economy-heading > div,
+.unified-economy-heading > p {
+  min-width: 0;
+}
+
+.unified-economy-heading h2 {
+  max-width: 650px;
+  line-height: 1.2;
+}
+
+.unified-economy-heading > p {
+  max-width: 470px;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.unified-architecture {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 18px;
+  max-width: 1000px;
+  padding: 30px;
+  border-color: rgba(98,220,255,.25);
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(53,107,255,.16), transparent 60%),
+    linear-gradient(145deg, rgba(13,22,46,.98), rgba(8,13,29,.98));
+}
+
+.unified-core {
+  grid-column: 1 / -1;
+  width: min(100%, 280px);
+  min-height: 145px;
+  justify-self: center;
+  border-radius: 20px;
+}
+
+.unified-connector {
+  display: none;
+}
+
+.unified-layer,
+.unified-services {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid rgba(98,220,255,.22);
+  border-radius: 17px;
+  background: linear-gradient(145deg, rgba(19,31,61,.9), rgba(11,18,39,.94));
+}
+
+.unified-layer-heading {
+  margin-bottom: 18px;
+  color: #75dfff;
+  font-size: 11px;
+  letter-spacing: 1.4px;
+}
+
+.unified-pools {
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.unified-pool {
+  min-height: 66px;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 13px 15px;
+  border-color: rgba(98,220,255,.22);
+  border-radius: 11px;
+  background: rgba(53,107,255,.09);
+}
+
+.unified-pool span {
+  margin: 0;
+  font-size: 10px;
+}
+
+.unified-pool strong {
+  font-size: 12px;
+}
+
+.unified-service-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.unified-service-list span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 58px;
+  padding: 10px;
+  border-color: rgba(98,220,255,.2);
+  border-radius: 10px;
+  background: linear-gradient(145deg, rgba(53,107,255,.12), rgba(139,92,255,.09));
+  color: #d5e3ff;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.unified-architecture-caption {
+  grid-column: 1 / -1;
+  max-width: 700px;
+  margin: 4px auto 0;
+  font-size: 12px;
+}
+
+.unified-principles {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 17px;
+  max-width: 1000px;
+  margin: 35px auto 0;
+}
+
+.unified-card,
+.unified-card:nth-child(4),
+.unified-card:nth-child(5) {
+  grid-column: auto;
+  min-height: 220px;
+  padding: 26px;
+  border-color: rgba(98,220,255,.2);
+  border-radius: 17px;
+  background:
+    radial-gradient(ellipse at 0% 0%, rgba(53,107,255,.10), transparent 65%),
+    linear-gradient(145deg, rgba(15,24,48,.96), rgba(9,15,32,.98));
+}
+
+.unified-card:last-child {
+  grid-column: 1 / -1;
+}
+
+.unified-card-index {
+  top: 22px;
+  right: 23px;
+  color: #62dcff;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.unified-card-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 20px;
+  border-radius: 13px;
+  font-size: 22px;
+}
+
+.unified-card h3 {
+  margin-bottom: 8px;
+  color: #f1f5ff;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.unified-card p {
+  margin-top: 8px;
+  color: #b5c3df;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.unified-economy-note,
+.unified-future-services {
+  max-width: 1000px;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.unified-economy-tagline {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+@media (max-width: 760px) {
+  .unified-economy-section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .unified-economy-heading {
+    gap: 15px;
+    margin-bottom: 28px;
+  }
+
+  .unified-economy-heading > p {
+    font-size: 13px;
+  }
+
+  .unified-architecture {
+    grid-template-columns: 1fr;
+    gap: 13px;
+    padding: 22px 16px;
+    margin-bottom: 25px;
+  }
+
+  .unified-core {
+    grid-column: auto;
+    width: min(100%, 245px);
+  }
+
+  .unified-layer,
+  .unified-services {
+    padding: 18px 14px;
+  }
+
+  .unified-pool {
+    min-height: 60px;
+  }
+
+  .unified-service-list span {
+    min-height: 54px;
+    font-size: 11px;
+  }
+
+  .unified-architecture-caption {
+    grid-column: auto;
+    font-size: 11px;
+  }
+
+  .unified-principles {
+    grid-template-columns: 1fr;
+    gap: 13px;
+    margin-top: 25px;
+  }
+
+  .unified-card,
+  .unified-card:last-child {
+    grid-column: auto;
+    min-height: 0;
+    padding: 23px 20px;
+  }
+
+  .unified-card h3 {
+    font-size: 16px;
+  }
+
+  .unified-card p {
+    font-size: 13px;
+  }
+
+  .unified-economy-tagline {
+    font-size: 12px;
+    letter-spacing: .2px;
+  }
+}

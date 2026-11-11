@@ -27,6 +27,11 @@
       ecosystemLabel: "02 / THE ECOSYSTEM",
       ecosystemTitle: 'One vision. <span class="gradient-text">Many possibilities.</span>',
       ecosystemDescription: "Designed to bring different projects and digital utilities into a connected environment.",
+      fragmentationLabel: "THE FRAGMENTATION CHALLENGE",
+      fragmentationTitle: "From fragmented assets.<br><span class=\"gradient-text\">To connected liquidity.</span>",
+      fragmentationDescription: "GBTC explores a more connected structure for projects, digital assets, and liquidity across the GRAM ecosystem.",
+      fragmentationCards: [["Asset Fragmentation", "Projects and digital assets often operate across separate markets, pools, and liquidity environments."], ["Connected Liquidity", "Liquidity pools and trading pairs can create structured connections between independent projects and assets."], ["Liquidity Intelligence", "Monitoring liquidity depth, market activity, pricing, and slippage can support more informed ecosystem decisions."], ["Risk-Aware Allocation", "Future liquidity management may explore allocation frameworks guided by transparent rules and risk parameters."]],
+      fragmentationNote: "Connected liquidity does not eliminate market risk or guarantee protection against losses. These capabilities represent a development direction, not a claim that every mechanism is currently active.",
       cards: [
         ["Multi-Asset Liquidity", "Explore liquidity connections between digital assets and projects, with an emphasis on transparency and responsible development.", "LIQUIDITY"],
         ["Connected Projects", "A framework for bringing diverse blockchain initiatives together and exploring new opportunities for collaboration.", "ECOSYSTEM"],
@@ -80,6 +85,11 @@
       ecosystemLabel: "02 / L’ÉCOSYSTÈME",
       ecosystemTitle: 'Une vision. <span class="gradient-text">De nombreuses possibilités.</span>',
       ecosystemDescription: "Conçu pour réunir différents projets et services numériques dans un environnement connecté.",
+      fragmentationLabel: "LE DÉFI DE LA FRAGMENTATION",
+      fragmentationTitle: "Des actifs fragmentés.<br><span class=\"gradient-text\">Vers une liquidité connectée.</span>",
+      fragmentationDescription: "GBTC explore une structure plus connectée pour les projets, les actifs numériques et la liquidité au sein de l’écosystème GRAM.",
+      fragmentationCards: [["Fragmentation des actifs", "Les projets et les actifs numériques évoluent souvent sur des marchés, des pools et des environnements de liquidité distincts."], ["Liquidité connectée", "Les pools de liquidité et les paires de trading peuvent établir des liens structurés entre des projets et des actifs indépendants."], ["Analyse de la liquidité", "Le suivi de la profondeur de liquidité, de l’activité du marché, des prix et du slippage peut éclairer les décisions de l’écosystème."], ["Allocation adaptée aux risques", "La gestion future de la liquidité pourrait explorer des modèles d’allocation fondés sur des règles transparentes et des paramètres de risque."]],
+      fragmentationNote: "La liquidité connectée n’élimine pas les risques du marché et ne garantit aucune protection contre les pertes. Ces capacités constituent une orientation de développement et ne sont pas nécessairement déjà opérationnelles.",
       cards: [
         ["Liquidité multi-actifs", "Explorer les liens de liquidité entre actifs numériques et projets, en privilégiant la transparence et un développement responsable.", "LIQUIDITÉ"],
         ["Projets connectés", "Un cadre pour réunir diverses initiatives blockchain et explorer de nouvelles possibilités de collaboration.", "ÉCOSYSTÈME"],
@@ -133,6 +143,11 @@
       ecosystemLabel: "Ecosistema",
       ecosystemTitle: "Conexiones que generan posibilidades",
       ecosystemDescription: "Un enfoque abierto para conectar proyectos, activos y servicios digitales.",
+      fragmentationLabel: "EL RETO DE LA FRAGMENTACIÓN",
+      fragmentationTitle: "Activos fragmentados.<br><span class=\"gradient-text\">Hacia una liquidez conectada.</span>",
+      fragmentationDescription: "GBTC explora una estructura más conectada para proyectos, activos digitales y liquidez dentro del ecosistema GRAM.",
+      fragmentationCards: [["Fragmentación de activos", "Los proyectos y activos digitales suelen operar en mercados, pools y entornos de liquidez separados."], ["Liquidez conectada", "Los pools de liquidez y los pares de trading pueden crear conexiones estructuradas entre proyectos y activos independientes."], ["Inteligencia de liquidez", "El seguimiento de la profundidad de liquidez, la actividad del mercado, los precios y el slippage puede facilitar decisiones mejor fundamentadas."], ["Asignación consciente del riesgo", "La futura gestión de liquidez podría explorar modelos de asignación guiados por reglas transparentes y parámetros de riesgo."]],
+      fragmentationNote: "La liquidez conectada no elimina el riesgo de mercado ni garantiza protección frente a pérdidas. Estas capacidades representan una línea de desarrollo, no una afirmación de que todos los mecanismos estén activos.",
       cards: [
         { title: "Pools de liquidez", description: "Conexiones de liquidez entre diferentes activos y tokens del ecosistema GRAM." },
         { title: "Proyectos Web3", description: "Un entorno para conectar iniciativas y comunidades digitales." },
@@ -185,6 +200,11 @@
       ecosystemLabel: "Ökosystem",
       ecosystemTitle: "Verbindungen schaffen neue Möglichkeiten",
       ecosystemDescription: "Ein offener Ansatz zur Verbindung von Projekten, Assets und digitalen Diensten.",
+      fragmentationLabel: "DIE HERAUSFORDERUNG DER FRAGMENTIERUNG",
+      fragmentationTitle: "Getrennte digitale Assets.<br><span class=\"gradient-text\">Vernetzte Liquidität.</span>",
+      fragmentationDescription: "GBTC untersucht eine stärker vernetzte Struktur für Projekte, digitale Assets und Liquidität innerhalb des GRAM-Ökosystems.",
+      fragmentationCards: [["Fragmentierung von Assets", "Projekte und digitale Assets agieren häufig in getrennten Märkten, Pools und Liquiditätsumgebungen."], ["Vernetzte Liquidität", "Liquiditätspools und Handelspaare können strukturierte Verbindungen zwischen unabhängigen Projekten und Assets schaffen."], ["Liquiditätsanalyse", "Die Überwachung von Liquiditätstiefe, Marktaktivität, Preisen und Slippage kann fundiertere Entscheidungen unterstützen."], ["Risikobewusste Allokation", "Die zukünftige Liquiditätsverwaltung könnte Allokationsmodelle untersuchen, die auf transparenten Regeln und Risikoparametern basieren."]],
+      fragmentationNote: "Vernetzte Liquidität beseitigt keine Marktrisiken und garantiert keinen Schutz vor Verlusten. Diese Fähigkeiten beschreiben eine Entwicklungsrichtung und sind nicht zwangsläufig bereits verfügbar.",
       cards: [
         { title: "Liquiditätspools", description: "Liquiditätsverbindungen zwischen verschiedenen Assets und Token im GRAM-Ökosystem." },
         { title: "Web3-Projekte", description: "Ein Umfeld zur Vernetzung digitaler Initiativen und Communities." },
@@ -237,6 +257,11 @@
       ecosystemLabel: "Ekosistem",
       ecosystemTitle: "Yeni Olanaklar Sunan Bağlantılar",
       ecosystemDescription: "Projeleri, varlıkları ve dijital hizmetleri birbirine bağlamak için açık bir yaklaşım.",
+      fragmentationLabel: "PARÇALANMANIN GETİRDİĞİ ZORLUK",
+      fragmentationTitle: "Parçalı varlıklar.<br><span class=\"gradient-text\">Birbirine bağlı likidite.</span>",
+      fragmentationDescription: "GBTC, GRAM ekosistemindeki projeler, dijital varlıklar ve likidite için daha bağlantılı bir yapı geliştirme olasılığını araştırır.",
+      fragmentationCards: [["Varlıkların Parçalanması", "Projeler ve dijital varlıklar çoğu zaman ayrı piyasalarda, havuzlarda ve likidite ortamlarında faaliyet gösterir."], ["Bağlantılı Likidite", "Likidite havuzları ve işlem çiftleri, bağımsız projeler ve varlıklar arasında yapılandırılmış bağlantılar oluşturabilir."], ["Likidite Analizi", "Likidite derinliğinin, piyasa faaliyetinin, fiyatların ve kaymanın izlenmesi daha bilinçli ekosistem kararlarını destekleyebilir."], ["Risk Odaklı Tahsis", "Gelecekteki likidite yönetimi, şeffaf kurallar ve risk parametreleriyle yönlendirilen tahsis modellerini araştırabilir."]],
+      fragmentationNote: "Bağlantılı likidite piyasa riskini ortadan kaldırmaz ve kayıplara karşı koruma garantisi vermez. Bu yetenekler bir geliştirme yönünü temsil eder; tüm mekanizmaların şu anda aktif olduğu anlamına gelmez.",
       cards: [
         { title: "Likidite Havuzları", description: "GRAM ekosistemindeki farklı varlıklar ve tokenler arasında likidite bağlantıları." },
         { title: "Web3 Projeleri", description: "Dijital girişimleri ve toplulukları birbirine bağlamaya yönelik bir ortam." },
@@ -289,6 +314,11 @@
       ecosystemLabel: "Экосистема",
       ecosystemTitle: "Связи открывают новые возможности",
       ecosystemDescription: "Открытый подход к объединению проектов, активов и цифровых сервисов.",
+      fragmentationLabel: "ПРОБЛЕМА ФРАГМЕНТАЦИИ",
+      fragmentationTitle: "Разрозненные активы.<br><span class=\"gradient-text\">Связанная ликвидность.</span>",
+      fragmentationDescription: "GBTC исследует более связанную структуру для проектов, цифровых активов и ликвидности в экосистеме GRAM.",
+      fragmentationCards: [["Фрагментация активов", "Проекты и цифровые активы часто работают на отдельных рынках, в разных пулах и средах ликвидности."], ["Связанная ликвидность", "Пулы ликвидности и торговые пары могут создавать структурированные связи между независимыми проектами и активами."], ["Аналитика ликвидности", "Мониторинг глубины ликвидности, рыночной активности, цен и проскальзывания помогает принимать более обоснованные решения."], ["Распределение с учётом рисков", "Будущая система управления ликвидностью может исследовать модели распределения на основе прозрачных правил и параметров риска."]],
+      fragmentationNote: "Связанная ликвидность не устраняет рыночные риски и не гарантирует защиту от убытков. Эти возможности обозначают направление развития, а не утверждение, что все механизмы уже работают.",
       cards: [
         { title: "Пулы ликвидности", description: "Объединение ликвидности различных активов и токенов в экосистеме GRAM." },
         { title: "Web3-проекты", description: "Возможности для развития взаимодействия между цифровыми проектами и сообществами." },
@@ -341,6 +371,11 @@
       ecosystemLabel: "生态系统",
       ecosystemTitle: "连接创造更多可能",
       ecosystemDescription: "以开放的方式连接项目、资产和数字服务。",
+      fragmentationLabel: "资产碎片化挑战",
+      fragmentationTitle: "分散的数字资产。<br><span class=\"gradient-text\">互联的流动性。</span>",
+      fragmentationDescription: "GBTC 正在探索一种更互联的结构，以连接 GRAM 生态系统中的项目、数字资产和流动性。",
+      fragmentationCards: [["资产碎片化", "项目和数字资产通常分布在不同的市场、流动性池和流动性环境中。"], ["互联流动性", "流动性池和交易对可以在独立项目与资产之间建立结构化连接。"], ["流动性分析", "监测流动性深度、市场活动、价格和滑点，有助于支持更有依据的生态决策。"], ["风险导向的配置", "未来的流动性管理可能探索基于透明规则和风险参数的配置框架。"]],
+      fragmentationNote: "互联流动性无法消除市场风险，也不保证避免损失。这些能力代表未来的发展方向，并不表示所有机制目前都已投入运行。",
       cards: [
         { title: "流动性池", description: "连接 GRAM 生态系统中不同资产和代币的流动性。" },
         { title: "Web3 项目", description: "为数字项目和社区之间的连接提供发展空间。" },
@@ -393,6 +428,11 @@
       ecosystemLabel: "02 / المنظومة",
       ecosystemTitle: 'رؤية واحدة. <span class="gradient-text">إمكانات متعددة.</span>',
       ecosystemDescription: "منظومة مصممة لجمع المشاريع المختلفة والخدمات الرقمية ضمن بيئة مترابطة.",
+      fragmentationLabel: "تحدّي تشتّت الأصول",
+      fragmentationTitle: "أصول متفرقة.<br><span class=\"gradient-text\">وسيولة مترابطة.</span>",
+      fragmentationDescription: "يستكشف GBTC بنية أكثر ترابطاً للمشاريع والأصول الرقمية والسيولة ضمن منظومة GRAM.",
+      fragmentationCards: [["تجزّؤ الأصول", "غالباً ما تعمل المشاريع والأصول الرقمية ضمن أسواق ومجمعات سيولة وبيئات تداول منفصلة."], ["السيولة المترابطة", "يمكن لمجمعات السيولة وأزواج التداول إنشاء روابط منظمة بين المشاريع والأصول المستقلة."], ["ذكاء السيولة", "يمكن لمراقبة عمق السيولة ونشاط السوق والأسعار والانزلاق السعري أن تدعم اتخاذ قرارات أكثر دقة."], ["تخصيص السيولة المراعي للمخاطر", "قد تستكشف إدارة السيولة مستقبلاً نماذج تخصيص تستند إلى قواعد شفافة ومعايير واضحة للمخاطر."]],
+      fragmentationNote: "ترابط السيولة لا يلغي مخاطر السوق ولا يضمن الحماية من الخسائر. هذه الإمكانات تمثل توجهاً للتطوير المستقبلي، ولا تعني أن جميع الآليات متاحة أو مفعّلة حالياً.",
       cards: [
         ["سيولة متعددة الأصول", "استكشف الروابط بين سيولة الأصول الرقمية والمشاريع، مع التركيز على الشفافية والتطوير المسؤول.", "السيولة"],
         ["مشاريع مترابطة", "إطار يجمع مبادرات البلوكشين المتنوعة ويفتح المجال لاستكشاف فرص جديدة للتعاون.", "المنظومة"],
@@ -512,6 +552,17 @@
     setText(".ecosystem-section > .section-heading .section-label", t.ecosystemLabel);
     setHTML(".ecosystem-section .section-heading h2", t.ecosystemTitle);
     setText(".ecosystem-section .section-heading p", t.ecosystemDescription);
+    setText("#fragmentation-label", t.fragmentationLabel);
+    setHTML("#fragmentation-title", t.fragmentationTitle);
+    setText("#fragmentation-description", t.fragmentationDescription);
+    setText("#fragmentation-note", t.fragmentationNote);
+    setMany(".fragmentation-card", t.fragmentationCards, (card, value) => {
+      const heading = card.querySelector("h3");
+      const paragraph = card.querySelector("p");
+      if (heading) heading.textContent = value[0];
+      if (paragraph) paragraph.textContent = value[1];
+    });
+
     setMany(".feature-card", t.cards, (card, value) => {
       const data = normalizeCard(value);
       const heading = card.querySelector("h3");
